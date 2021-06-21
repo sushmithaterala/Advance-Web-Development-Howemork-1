@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>ST Photographer</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <ul class="nav-menu">
+                    <li><a href="mainpage.html">HOME</a></li>
+                    <li class="homebtn"><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="resume.html">RESUME</a></li>
+                    <li><a href="contact_me.html">CONTACT ME</a></li>
+                    
+                </ul>
+            </div>
+            <section>
+                <img class="mySlides" src="stproject2.jpg"
+                style="width:100%" height="700px">
+                <img class="mySlides" src="stproject3.jpg"
+                style="width:100%" height="700px">
+                <img class="mySlides" src="stproject4.jpg"
+                style="width:100%" height="700px">
+                <img class="mySlides" src="stproject5.jpg"
+                style="width:100%" height="700px">
+                <img class="mySlides" src="stproject6.jpg"
+                style="width:100%" height="700px">
+              </section>
+              <script>
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}
+                  x[myIndex-1].style.display = "block";
+                  setTimeout(carousel, 3000);
+                }
+                </script>
+           
+        </header>
+        
+            
+    </body>
+</html>
